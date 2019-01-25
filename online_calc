@@ -1,0 +1,17 @@
+#!/usr/bin/python2
+import webbrowser
+
+try:
+        x=raw_input("enter number one: ")
+        y=raw_input("enter number two: ")
+        print int(x)+int(y)
+        print "Correct"
+
+except:
+        webbrowser.open("https://www.google.com/search?q=online+calculator&ie=utf-8&oe=utf-8&client=firefox-b-ab")
+
+'''
+finally:
+        print "CORRECT"
+'''
+
