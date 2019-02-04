@@ -1,0 +1,12 @@
+#!/usr/bin/python2
+
+try:
+	x=raw_input("enter number one: ")
+	y=raw_input("enter number two: ")
+	print int(x)+int(y)
+
+except:
+	print "ayee bhaaii dekh k type kar"
+
+finally:
+	print "well done"

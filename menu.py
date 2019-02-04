@@ -3,6 +3,8 @@ import platform
 import webbrowser
 import getpass
 import os
+import subprocess
+import socket
 
 options='''
 Press 1 to check your OS version :
@@ -13,7 +15,7 @@ Press 5 to check number of tabs in your web browser :
 Press 6 to logout your system graphically :
 Press 7 to login facebook account :
 Press 8 to send email to someone :
-Press 9 to to list all connected ip and mac in your current network :
+Press 9 to list all connected ip and mac in your current network :
 Press 10 to
 Press 11 to 
 Press 12 to
@@ -43,5 +45,17 @@ if choice=='4':
 	webbrowser.open("http://www.google.com/search?q="+s)
 
 if choice=='6':
-	l=os.system("shutdown -l")
-	print(l)
+	off=subprocess.call(["shutdown","/l"])
+	print(off)
+
+if choice=='7':
+	IP1 = socket.gethostbyname(socket.gethostname()) # local IP adress of your computer
+	'''IP2 = socket.gethostbyname('name_of_your_computer') # IP adress of remote computer
+'''
+
+	print(IP1)
+'''	print(IP2)'''
+
+
+
+
